@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Cart || Belle ~ Food</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="icon" href="img/logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-2">
+
+    <section  class="header">
+
+      <div class="header screen">
+        <div class="logo-div screen">
+          <a href="#" class="logo-a">
+            <h3 class="logotxt">Belle</h3>
+            <img src="img/logo.png" alt="logo" id="logo">
+          </a>
+        </div>
+        <div class="search-div screen screen-sm">
+          <input type="text" id="search" placeholder="Search for delicacies...">
+        </div>
+        <div class="sm-none" style="display: flex;">
+          <div class="link-div screen">
+            <a href="index.html" class="home"><li>Home</li></a>
+            <a href="about.html" class="about"><li>About</li></a>
+            <a href="dishes.html" class="dishes"><li>Dishes</li></a>
+          </div>
+          <div class="cart-div screen">
+            <a href="cart.html"><img src="img/cart.png" alt="cart" id="cart"></a>
+            <div class="cart-no">0</div>
+          </div>
+        </div>
+        <div class="hamburger-icon screen screen-sm">
+          <button class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="hamburger-menu">
+            <div class="link-div">
+              <a href="index.html" class="home"><li>Home</li></a>
+              <a href="about.html" class="about"><li>About</li></a>
+              <a href="dishes.html" class="dishes"><li>Dishes</li></a>
+            </div>
+            <div class="cart-div">
+              <a href="cart.html"><img src="img/cart.png" alt="cart" id="cart"></a>
+              <div class="cart-no">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="search-results"></div>
+    </section>
+
+    <div class="cart-page">
+      <h1>Cart</h1>
+      <div class="cart-items">
+        <div id="cart-details">
+        </div>
+      <input type="text" placeholder="Please enter your delivery address" id="address-input" required>
+      <div class="order-summary">
+        <h2>Order Summary</h2>
+        <p id="grand-total">Grand Total: ₦0.00</p>
+      </div>
+      <div class="actions">
+        <a href="dishes.html"><button class="back-btn">Back to Order</button></a>
+        <button class="checkout-btn">Checkout</button>
+      </div>
+    </div>
+
+    <script src="js/cart.js"></script>
+  </body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dishes Belle ~ Food</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    
+    <section  class="header">
+
+      <div class="header screen">
+        <div class="logo-div screen">
+          <a href="#" class="logo-a">
+            <h3 class="logotxt">Belle</h3>
+            <img src="img/logo.png" alt="logo" id="logo">
+          </a>
+        </div>
+        <div class="search-div screen screen-sm">
+          <input type="text" id="search" placeholder="Search for delicacies...">
+          <button class="search-btn" id="search-button">Search</button>
+        </div>
+        <div class="sm-none" style="display: flex;">
+          <div class="link-div screen">
+            <a href="index.html" class="home"><li>Home</li></a>
+            <a href="about.html" class="about"><li>About</li></a>
+            <a href="dishes.html" class="dishes"><li class="current">Dishes</li></a>
+          </div>
+          <div class="cart-div screen">
+            <a href="cart.html" onclick="displayCartItems()"><img src="img/cart.png" alt="cart" id="cart"></a>
+            <div class="cart-no">0</div>
+          </div>
+        </div>
+        <div class="hamburger-icon screen screen-sm">
+          <button class="hamburger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <div class="hamburger-menu">
+            <div class="link-div">
+              <a href="index.html" class="home"><li>Home</li></a>
+              <a href="about.html" class="about"><li>About</li></a>
+              <a href="dishes.html" class="dishes"><li>Dishes</li></a>
+            </div>
+            <div class="cart-div">
+              <a href="cart.html" onclick="displayCartItems()"><img src="img/cart.png" alt="cart" id="cart"></a>
+              <div class="cart-no">0</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section class="menu bg-2">
+      <div class="screen screen-sm overall-div">
+        <h1 class="menu-h2"><a href="dishes.html">Our Menu</a></h1>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <img src="img/rice.png" alt="menu item 1">
+          <h3 >Rice</h3>
+          <p>A plate of white rice.</p>
+          <div>₦1,000</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/riro-soup.jpeg" alt="menu item 2">
+          <h3>Ofe Riro</h3>
+          <p>A plate of Riro Soup.</p>
+          <div>₦1,500</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/chicken.jpeg" alt="menu item 1">
+          <h3>Chicken</h3>
+          <p>A full chicken.</p>
+          <div>₦4,000</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/eba.jpeg" alt="menu item 2">
+          <h3>Garri</h3>
+          <p>Wraps of Garri.</p>
+          <div>₦500</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/water.jpeg" alt="menu item 1">
+          <h3>Water</h3>
+          <p>A bottle of water.</p>
+          <div>₦300</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/poundo yam.jpeg" alt="menu item 2">
+          <h3>Pounded Yam</h3>
+          <p>Wraps of pounded yam.</p>
+          <div>₦800</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/fufu.jpeg" alt="menu item 1">
+          <h3>Fufu</h3>
+          <p>Wraps of Fufu.</p>
+          <div>₦500</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/okro.jpeg" alt="menu item 2">
+          <h3>Okra Soup</h3>
+          <p>A plate of Okra soup.</p>
+          <div>₦1,000</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/semo.jpeg" alt="menu item 1">
+          <h3>Semovita</h3>
+          <p>Wraps of Semovita</p>
+          <div>₦800</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/bread.png" alt="menu item 2">
+          <h3>Bread</h3>
+          <p>Loafs of Bread</p>
+          <div>₦1,300</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/plantain.png" alt="menu item 1">
+          <h3>Plantain</h3>
+          <p>A plate of fried plantain</p>
+          <div>₦1,000</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/spaghetti.png" alt="menu item 2">
+          <h3>Spaghetti</h3>
+          <p>A plate of spaghetti.</p>
+          <div>₦900</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/eggs.png" alt="menu item 1">
+          <h3>Fried Eggs</h3>
+          <p>A plate of fried eggs.</p>
+          <div>₦1,000</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/macaroni.png" alt="menu item 2">
+          <h3>Macaroni</h3>
+          <p>A plate of Macaroni pasta.</p>
+          <div>₦850</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/drinks.png" alt="menu item 1">
+          <h3>Soft Drinks</h3>
+          <p>Chilled soft drinks.</p>
+          <div>₦400</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/stew.png" alt="menu item 2">
+          <h3>Stew</h3>
+          <p>Stew for rice, spaghetti, etc.</p>
+          <div>₦700</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+        <div class="menu-item">
+          <img src="img/tea.png" alt="menu item 1">
+          <h3>Tea</h3>
+          <p>All kinds of tea.</p>
+          <div>₦800</div>
+          <button class="btn-add">Add to Cart</button>
+        </div>
+        <div class="menu-item2">
+          <img src="img/moi.png" alt="menu item 2">
+          <h3>Moi Moi</h3>
+          <p>Moi moi and fish / moi moi and eggs.</p>
+          <div>₦1,100</div>
+          <button class="btn-add-b">Add to Cart</button>
+        </div>
+      </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <p>&copy; 2024 Belle~Food Ordering Restaurant</p>
+    </section>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
